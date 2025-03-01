@@ -44,6 +44,7 @@ int main()
 
     //Using switch statement to assign days to months
     switch (month)
+    {
     case 1:
     case 3:
     case 5:
@@ -52,13 +53,13 @@ int main()
     case 10:
     case 12:
         cout << "The are 31 Days ";
-    
-    switch (month)
+        break;
     case 4:
     case 6:
     case 9:
     case 11:
         cout << "There are 30 days ";
+    }
 
     //Else if statement, assigns the month based off of integer entered, also outputs the date in month, year 
     if (month == 1) {
@@ -94,23 +95,6 @@ int main()
                                                 else if (month == 12) {
                                                     cout << "in December, " << Year;
                                                 }
-   
-    switch (month)
-    case 1:
-    case 3:
-    case 5:
-    case 7:
-    case 8:
-    case 10:
-    case 12:
-        Days = 31;
-
-    switch (month)
-    case 4:
-    case 6:
-    case 9:
-    case 11:
-        Days = 30;
     
     switch (month)
     case 2:
@@ -140,8 +124,5 @@ int main()
         cout << "There are 29 days on February, " << Year;
     else if (LeapYear == 0)
         cout << "There are 28 days on February, " << Year;
-
-
-
 }
 
